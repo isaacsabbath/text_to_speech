@@ -224,6 +224,3 @@ def cleanup_temp_files():
                         os.remove(file_path)
     except Exception as e:
         logger.error(f"Error during temp file cleanup: {str(e)}")
-
-if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5000, debug=True)
