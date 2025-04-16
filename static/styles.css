@@ -1,0 +1,59 @@
+/* Custom styles to complement Bootstrap */
+
+.card {
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.card-header {
+    background-color: rgba(var(--bs-secondary-rgb), 0.1);
+}
+
+.form-floating textarea.form-control {
+    height: 250px;
+}
+
+#audio-player {
+    background-color: rgba(var(--bs-dark-rgb), 0.2);
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+#audio-element {
+    margin: 0;
+}
+
+#loading-indicator {
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(var(--bs-dark-rgb), 0.1);
+    border-radius: 0.5rem;
+    margin: 2rem 0;
+}
+
+.spinner-border {
+    width: 3rem;
+    height: 3rem;
+}
+
+/* Ensure buttons have proper spacing */
+.btn i {
+    width: 1rem;
+    text-align: center;
+    margin-right: 0.5rem;
+}
+
+/* Mobile optimizations */
+@media (max-width: 768px) {
+    .card-header {
+        flex-direction: column;
+        align-items: flex-start !important;
+    }
+    
+    .card-header button {
+        margin-top: 0.5rem;
+    }
+}
